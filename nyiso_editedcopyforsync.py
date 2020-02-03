@@ -237,9 +237,9 @@ class NYISOClient(BaseClient):
         datestr = date.strftime('%Y%m01')
         if self.options['data'] == 'lmp':
             if self.options['category'] == 'zone':
-                url = '%s/%s/%s%s_zone.csv.zip' % (self.base_url, label, datestr, label)
+                url = '%s/%s/%s%s_zone_csv.zip' % (self.base_url, label, datestr, label)
             else:
-                url = '%s/%s/%s%s_gen.csv.zip' % (self.base_url, label, datestr, label)
+                url = '%s/%s/%s%s_gen_csv.zip' % (self.base_url, label, datestr, label)
         else:
             url = '%s/%s/%s%s_csv.zip' % (self.base_url, label, datestr, label)
 
